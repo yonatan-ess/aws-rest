@@ -13,8 +13,11 @@ if __name__ == "__main__":
 	dns_name=sys.argv[3]
 
 
-	a = Instance()
-	a.name=dns_name
-	a.dns_type=dns_type
+	postint=int(number_of_instance)
 	
-	a.runInstance()
+	for i in range(postint):
+
+		a = Instance()
+		a.name=dns_name
+		a.dns_type=dns_type
+		a.runInstance()
